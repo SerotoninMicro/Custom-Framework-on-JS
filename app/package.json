@@ -1,0 +1,15 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "javascript practise",
+  "source": "./index.html",
+  "scripts": {
+    "serve": "parcel ./src/index.html -p 4269 --open",
+    "build": "parcel build ./src/index.html --no-source-maps"
+  },
+  "author": "AnastsasiaLebed",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}
