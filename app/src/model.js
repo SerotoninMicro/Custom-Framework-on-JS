@@ -1,8 +1,9 @@
-import image from './assets/pwnr6.jpeg'
+import image1 from './assets/pwnr6.jpeg'
+import image2 from './assets/futurism.png'
 import {TitleBlock, TextBlock, ColumnsBlock, ImageBlock} from './classes/blocks'
 
 export const model = [
-    new TitleBlock('Anastasia Lebed Gallery', {
+    new TitleBlock('Plastic will never rot by Anastasia Lebed', {
         tag: 'h2',
         styles: {
         background: '#232323',
@@ -12,7 +13,7 @@ export const model = [
         'font-family': 'futura',
                 }
     }),
-    new TextBlock('portfolio design of lebed ansatasia written in pure javascript', {
+    new TextBlock('portfolio site of lebed ansatasia written in pure javascript', {
         tag: 'h3',
         styles: {
         'text-align': 'center',
@@ -21,6 +22,19 @@ export const model = [
         color: '#fff',
                 }
     }),
+
+    new ImageBlock(image1, {
+        styles: {
+            padding: '2rem 0',
+            width: '500px',
+                },
+        imageStyles: {            
+            'flex-direction': 'auto',
+            'flex-basis': 'auto',
+                },
+        alt: 'PWNR art about ecology'
+     }),
+
     new ColumnsBlock([
         'plastic',
         'wil',
@@ -32,17 +46,4 @@ export const model = [
             'text-align': 'center',
             color: '#fff',
                     }
-     }),
-     new ImageBlock(image, {
-        styles: {
-            padding: '2rem 0',
-            display: 'flex',
-            'justify-content': 'center',
-                },
-        imageStyles: {
-            width: '500px',
-            height: 'auto',
-                },
-        alt: 'Это картинка'
-     }),
-] 
+    })]

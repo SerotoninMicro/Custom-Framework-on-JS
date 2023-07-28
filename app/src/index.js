@@ -1,7 +1,7 @@
 import{model} from './model.js'
 import'./styles/main.css' 
 import{Site} from './classes/site'
-import{Sidebar} from './classes/sidebar'
+//import{Sidebar} from './classes/sidebar'
 
 const site = new Site('#site')
 

@@ -5,8 +5,7 @@ class Block {
         this.value = value
         this.options = options
     }
-
-    toHTML() {
+     toHTML() {
         throw new Erorr('Method toHTML not implemented')
     }
 }
@@ -48,4 +47,3 @@ export class ImageBlock extends Block {
         return row(`<img src="${this.value}" alt="${alt}" style="${css(is)}" />`, css(styles))
     }
 }
-
